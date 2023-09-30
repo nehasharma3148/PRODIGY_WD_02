@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: black;
+}
+
+.stopWatch {
+    width: 30%;
+    padding: 30px 20px 30px;
+    background-color: white;
+    box-shadow: 1px 1px 20px rgba(128, 128, 128, 0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.time{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 70px;
+}
+.time h1{
+    font-family: serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttons button{
+    width: 28%;
+    height: 30px;
+    padding: 20px;
+    border-radius: 2px;
+    opacity: 0.5;
+    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+.buttons button:hover{
+    opacity: 1;
+    border: none;
+    transform: translateY(-5px);
+}
+.buttons button:nth-child(1){
+    background-color: burlywood;
+}
+.buttons button:nth-child(2){
+    background-color: rgb(237, 237, 0);
+}
+.buttons button:nth-child(3){
+    background-color: blue;
+}
+@media screen and (max-width: 1100px) {
+    .stopWatch{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .stopWatch{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 560px) {
+    .stopWatch{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .stopWatch{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .stopWatch{
+        width: 80%;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+    .buttons button{
+        width: 90%;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .stopWatch{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 260px) {
+    .stopWatch{
+        width: 90%;
+    }
+}
